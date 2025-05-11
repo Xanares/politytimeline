@@ -60,6 +60,11 @@
   p.details {
     padding-left:1rem;
   }
+  a#github-link {
+    display: block;
+    text-align: right;
+    color: #666;
+  }
 
   .main-timeline{ position: relative; }
   .main-timeline:before,
