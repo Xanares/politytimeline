@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>Polity Timeline</title>
+  <title>Polity Timeline - Neal Asher's Universe Chronology</title>
   <link rel="icon" type="image/png" href="polity-logo-c-s.png"/>
-  <meta name="description" content="A new way of illustrating the timeline of the Polity Universe created by Neal Asher."/>
+  <meta name="description" content="Explore the chronology of Neal Asher's Polity Universe with an interactive timeline of books, ratings, and synopses."/>
   <meta name="author" content="Jesper Gojal Krogsgaard"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta http-equiv="last-modified" content="2025-01-18@19:00:00 CET" />
+  <meta name="keywords" content="Polity Universe, Neal Asher, sci-fi timeline, book chronology, science fiction, interactive timeline"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <meta name="robots" content="index, follow"/>
+
+  <meta http-equiv="last-modified" content="2025-05-11@15:00:00 CET" />
+
+<!-- Canonical URL -->
+  <link rel="canonical" href="https://politytimeline.com"/>
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Polity Timeline - Neal Asher's Universe Chronology"/>
+  <meta property="og:description" content="Discover the timeline of Neal Asher's Polity Universe with book synopses, ratings, and publication details."/>
+  <meta property="og:image" content="https://politytimeline.com/images/The-Departure.jpg"/>
+  <meta property="og:url" content="https://politytimeline.com"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Polity Timeline"/>
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Polity Timeline - Neal Asher's Universe Chronology"/>
+  <meta name="twitter:description" content="Discover the timeline of Neal Asher's Polity Universe with book synopses, ratings, and publication details."/>
+  <meta name="twitter:image" content="https://politytimeline.com/images/The-Departure.jpg"/>
+  <meta name="twitter:creator" content="@xanares_"/>
 
   <!-- Bootstrap + FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
@@ -15,14 +37,49 @@
   <!-- Google fonts (Raleway) -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300,600"/>
   <link rel="stylesheet" type="text/css" href="styles.css"/>
+  
   <link rel="preconnect" data-auto-collect="false" href="https://sa.politytimeline.com" />
   <script async defer src="https://sa.politytimeline.com/latest.js"></script>
-</head>
+
+<!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Polity Timeline",
+    "description": "An interactive timeline of Neal Asher's Polity Universe books, including synopses, publication dates, and ratings.",
+    "url": "https://politytimeline.com",
+    "author": {
+      "@type": "Person",
+      "name": "Jesper Gojal Krogsgaard"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Polity Timeline",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politytimeline.com/polity-logo-c-s.png"
+      },
+      "sameAs": ["https://x.com/xanares_"]
+    },
+    "dateModified": "2025-05-15",
+    "mainEntity": {
+      "@type": "CreativeWork",
+      "name": "Polity Universe Timeline",
+      "creator": {
+        "@type": "Person",
+        "name": "Neal Asher"
+      },
+      "description": "A chronological guide to the books and stories in Neal Asher's Polity Universe."
+    }
+  }
+  </script>
+ </head>
 
 <body class="">
   <section>
     <h1>Polity Timeline</h1>
-    <h2>a pretty good guesstimate on the chronology of the books in Neal Asher's Polity Universe</h2>
+    <h2>a none too bad guesstimate on the chronology of the books in Neal Asher's Polity Universe</h2>
     <br>
     <!-- Toggle description button -->
     <i class="fa-solid fa-file-lines fa-2xl" style="color: #536a72;" id="toggleDesc"></i>
@@ -81,6 +138,7 @@
   <details>
     <summary>Last updated 18 Jan 2025</summary>
     <p class="details">
+      <br>&bull; 11 May '25 - Updated review ratings (espec. Dark Diamond) and meta data. Inserted github repo link.
       <br>&bull; 18 Jan '25 - Separated data into a json file, set the page up to load it in and updated review ratings.
       <br>&bull; 19 Oct '24 - Added the upcoming Polity book Dark Diamond to the timeline.
       <br>&bull; 29 Jun '24 - Updated Goodreads/Amazon ratings and a set lower content height when descriptions are hidden.
@@ -186,5 +244,6 @@
     });
   </script>
 
+  <a href="https://github.com/Xanares/politytimeline" id="github-link">https://github.com/Xanares/politytimeline</a>
 </body>
 </html>
