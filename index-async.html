@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Polity Timeline - Neal Asher's Universe Chronology</title>
+  <link rel="icon" type="image/png" href="polity-logo-c-s.png"/>
+  <meta name="description" content="Explore the chronology of Neal Asher's Polity Universe with an interactive timeline of books, ratings, and synopses."/>
+  <meta name="author" content="Jesper Gojal Krogsgaard"/>
+  <meta name="keywords" content="Polity Universe, Neal Asher, sci-fi timeline, book chronology, science fiction, interactive timeline"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <meta name="robots" content="index, follow"/>
+
+  <meta http-equiv="last-modified" content="2025-05-11@15:00:00 CET" />
+
+<!-- Canonical URL -->
+  <link rel="canonical" href="https://politytimeline.com"/>
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Polity Timeline - Neal Asher's Universe Chronology"/>
+  <meta property="og:description" content="Discover the timeline of Neal Asher's Polity Universe with book synopses, ratings, and publication details."/>
+  <meta property="og:image" content="https://politytimeline.com/images/The-Departure.jpg"/>
+  <meta property="og:url" content="https://politytimeline.com"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Polity Timeline"/>
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Polity Timeline - Neal Asher's Universe Chronology"/>
+  <meta name="twitter:description" content="Discover the timeline of Neal Asher's Polity Universe with book synopses, ratings, and publication details."/>
+  <meta name="twitter:image" content="https://politytimeline.com/images/The-Departure.jpg"/>
+  <meta name="twitter:creator" content="@xanares_"/>
+
+  <!-- Bootstrap + FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google fonts (Raleway) -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300,600"/>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  
+  <link rel="preconnect" data-auto-collect="false" href="https://sa.politytimeline.com" />
+  <script async defer src="https://sa.politytimeline.com/latest.js"></script>
+
+<!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Polity Timeline",
+    "description": "An interactive timeline of Neal Asher's Polity Universe books, including synopses, publication dates, and ratings.",
+    "url": "https://politytimeline.com",
+    "author": {
+      "@type": "Person",
+      "name": "Jesper Gojal Krogsgaard"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Polity Timeline",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://politytimeline.com/polity-logo-c-s.png"
+      },
+      "sameAs": ["https://x.com/xanares_"]
+    },
+    "dateModified": "2025-05-15",
+    "mainEntity": {
+      "@type": "CreativeWork",
+      "name": "Polity Universe Timeline",
+      "creator": {
+        "@type": "Person",
+        "name": "Neal Asher"
+      },
+      "description": "A chronological guide to the books and stories in Neal Asher's Polity Universe."
+    }
+  }
+  </script>
+ </head>
+
+<body class="">
+  <section>
+    <h1>Polity Timeline</h1>
+    <h2>a none too bad guesstimate on the chronology of the books in Neal Asher's Polity Universe</h2>
+    <br>
+    <!-- Toggle description button -->
+    <i class="fa-solid fa-file-lines fa-2xl" style="color: #536a72;" id="toggleDesc"></i>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="main-timeline" class="main-timeline descVisible">
+
+          </div><!-- /main-timeline -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template for each timeline item -->
+  <template id="timelineTemplate">
+    <div class="timeline">
+      <div class="timeline-content">
+        <div class="circle">
+          <span class="homebox">
+            <img src="" alt="" class="img" loading="lazy">
+          </span>
+        </div>
+        <div class="content">
+          <h3 class="title h4"></h3>
+          <h4 class="date h5"></h4>
+          <p class="description"></p>
+          <p class="pubdate"></p>
+          <p class="ratings">
+            Goodreads rating: <span class="gr-rating"></span>
+            &nbsp;–&nbsp;
+            <a class="gr-link" href="#" target="_blank">Goodreads</a>
+            <br>
+            Amazon rating: <span class="amz-rating"></span>
+            &nbsp;–&nbsp;
+            <a class="amz-link" href="#" target="_blank">Amazon</a>
+          </p>
+          <div class="icon"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <section>
+    <div style="margin:20px;font-size:14px;">
+      Primary sources:
+      <br>&bull; <a href="https://www.nealasher.co.uk/where-do-i-start/" target="_PARENT">https://www.nealasher.co.uk/where-do-i-start/</a>
+      <br>&bull; <a href="https://www.nealasher.co.uk/polity-encyclopaedia/" target="_PARENT">https://www.nealasher.co.uk/polity-encyclopaedia/</a>
+      <br>&bull; <a href="https://www.nealasher.co.uk/polity-timeline/" target="_PARENT">https://www.nealasher.co.uk/polity-timeline/</a>
+      <br>&bull; <a href="https://www.goodreads.com/series/49128-polity-universe-chronological" target="_PARENT">https://www.goodreads.com/series/49128-polity-universe-chronological</a>
+    </div>
+  </section>
+
+  <details>
+    <summary>Last updated 11 May 2025</summary>
+    <p class="details">
+      <br>&bull; 11 May '25 - Updated review ratings (espec. Dark Diamond) and meta data. Inserted github repo link.
+      <br>&bull; 18 Jan '25 - Separated data into a json file, set the page up to load it in and updated review ratings.
+      <br>&bull; 19 Oct '24 - Added the upcoming Polity book Dark Diamond to the timeline.
+      <br>&bull; 29 Jun '24 - Updated Goodreads/Amazon ratings and a set lower content height when descriptions are hidden.
+      <br>&bull; 02 Jan '24 - Adjusted some ratings on the newer books after Goodreads/Amazon updates.
+      <br>&bull; 31 Dec '23 - Various small white-space and ui adjustments, a few spelling mistakes - Happy New Year Polity fans!
+      <br>&bull; 30 Dec '23 - Moved Jack Four from before the Human-Prador war to ~2800 CE
+      <br>&bull; 29 Dec '23 - List finished with book title, time on timeline, synopsis, publication date, image, ratings from and links to goodreads/amazon
+      <br>&bull; 29 Dec '23 - Logo/icon created
+      <br>&bull; 29 Dec '23 - politytimeline.com bought
+      <br>&bull; 29 Dec '23 - site online
+    </p>
+  </details>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if(window.location.hash && window.location.hash.substring(1) == "light") {
+        document.body.classList.toggle("light-mode");
+      }
+
+      const toggleBtn = document.getElementById('toggleDesc');
+      toggleBtn.addEventListener('click', () => {
+        const timeline = document.getElementById('main-timeline');
+        timeline.classList.toggle('descVisible');
+      });
+
+
+
+      // Fetch JSON data
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const entries = data.books;
+          console.log('Feed name:', data.feedName);
+          console.log('Last updated:', data.lastUpdated);
+
+          const timelineContainer = document.getElementById('main-timeline');
+          const template = document.getElementById('timelineTemplate');
+
+          entries.forEach(entry => {
+            // Clone the template
+            const clone = template.content.cloneNode(true);
+
+            // Fill in data
+            const imgEl = clone.querySelector('.img');
+            imgEl.src = entry.img;
+            imgEl.alt = entry.title;
+
+            clone.querySelector('.title').textContent = entry.title;
+            clone.querySelector('.date').textContent = entry.dateCE;
+            clone.querySelector('.description').innerHTML = entry.synopsis;
+            clone.querySelector('.pubdate').textContent = entry.pubdate;
+
+            if (entry.contents && entry.contents.length > 0) {
+              const ulEl = document.createElement('ul');
+              entry.contents.forEach(story => {
+                const li = document.createElement('li');
+                li.textContent = story;
+                ulEl.appendChild(li);
+              });
+              clone.querySelector('.description').innerHTML += "<br><br>Contents:";
+              clone.querySelector('.description').appendChild(ulEl);
+            }
+
+            // Ratings / links
+            const grRatingEl = clone.querySelector('.gr-rating');
+            const amzRatingEl = clone.querySelector('.amz-rating');
+            const grLinkEl   = clone.querySelector('.gr-link');
+            const amzLinkEl  = clone.querySelector('.amz-link');
+            const ratingsRow = clone.querySelector('.ratings');
+
+            let hasAnyRatingInfo = false;
+            if (entry.goodreadsRating !== null && entry.goodreadsRating !== undefined) {
+              grRatingEl.textContent = entry.goodreadsRating;
+              hasAnyRatingInfo = true;
+            } else {
+              grRatingEl.textContent = '';
+            }
+            if (entry.amazonRating !== null && entry.amazonRating !== undefined) {
+              amzRatingEl.textContent = entry.amazonRating;
+              hasAnyRatingInfo = true;
+            } else {
+              amzRatingEl.textContent = '';
+            }
+            if (entry.goodreadsLink) {
+              grLinkEl.href = entry.goodreadsLink;
+              hasAnyRatingInfo = true;
+            } else {
+              grLinkEl.style.display = 'none';
+            }
+            if (entry.amazonLink) {
+              amzLinkEl.href = entry.amazonLink;
+              hasAnyRatingInfo = true;
+            } else {
+              amzLinkEl.style.display = 'none';
+            }
+
+            timelineContainer.appendChild(clone);
+          });
+        })
+        .catch(err => {
+          console.error('Error loading data.json:', err);
+        });
+    });
+  </script>
+
+  <a href="https://github.com/Xanares/politytimeline" id="github-link">https://github.com/Xanares/politytimeline</a>
+</body>
+</html>
