@@ -30,7 +30,7 @@
   .light-mode h1,
   .light-mode h2,
   .light-mode .main-timeline .title,
-  .light-mode .main-timeline .date, 
+  .light-mode .main-timeline .date,
   .light-mode .main-timeline .description {
     color: #777;
   }
@@ -185,11 +185,12 @@
       text-align: left;
       visibility: hidden;
       height:0;
+      margin-bottom: 1rem;
   }
   .main-timeline.descVisible .description {
       height: unset;
   }
-  .main-timeline .ratings, 
+  .main-timeline .ratings,
   .main-timeline .pubdate {
       display: none;
   }
